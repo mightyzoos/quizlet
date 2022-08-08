@@ -1,0 +1,147 @@
+.app {
+  background-color: #3730A3;
+  position: absolute;
+  width: 100%;
+}
+
+main {
+  min-width: 864px;
+  width: 60%;
+  margin: 10% auto;
+}
+
+h1 {
+  color: white;
+  font-weight: bolder;
+  margin: 0;
+}
+
+h2 {
+  font-weight: bold;
+}
+
+button {
+  background-color: white;
+  border: 1px solid #1D4ED8;
+  border-radius: 10px;
+  padding: 15px 10px;
+  text-align: left;
+  font-size: 18px;
+  color: #1D4ED8;
+}
+
+button.default:hover {
+  border: none;
+  color: white;
+  background-color: #FB923C;
+}
+
+button > span:first-of-type {
+  margin-right: 2rem;
+}
+
+button.success {
+  color:white;
+  background-color: green;
+  border: none;
+}
+
+button.danger {
+  color: white;
+  background-color: red;
+  border: none;
+}
+
+button.next-button {
+  float: right;
+  border: none;
+  font-size: 35px;
+  transition: all .2s ease-in-out;
+}
+
+button.next-button:hover, button.next-button:focus {
+  transform: scale(1.1);
+  outline: none;
+}
+
+pre {
+  display: inline;
+}
+
+figure {
+  border-radius: 15px;
+  margin: 0;
+  margin-bottom: 35px;
+  padding: 1rem;
+  background-color: #BFDBFE;
+}
+
+.progress {
+  font-size: 0.75rem;
+  color: #64748B;
+}
+
+.progress span {
+  font-size: 1rem;
+  padding: 0 5px;
+}
+
+.quiz-header {
+  display: flex;
+  flex-direction: row;
+}
+
+.quiz-header > img {
+  position: static;
+}
+
+.question-card ,.result-card {
+  background-color: white;
+  border-radius: 15px;
+  padding: 25px 25px;
+}
+
+.answers {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.explanation {
+  margin-top: 35px;
+}
+
+.result-card {
+  text-align: center;
+  min-height: 500px;
+  color: #312E81;
+}
+
+.result-card img {
+  margin-top: 25px;
+}
+
+.result-card h2 {
+  font-size: 52px;
+}
+
+.result-card .score {
+  font-size: 36px;
+  color: #65A30D;
+  padding: 0 5px;
+}
+
+.result-card button {
+  margin-top: 35px;
+  min-width: 200px;
+  text-align: center;
+  color: #312E81;
+  border: 2px solid #312E81;
+  font-weight: bold;
+}
+
+.result-card button:hover {
+  color: white;
+  border: none;
+  background-color: #312E81;
+}
