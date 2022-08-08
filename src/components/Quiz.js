@@ -21,9 +21,9 @@ function Quiz() {
     const [gameIteration, setGameIteration] = useState(0);
 
     const getNextQuestion = () => {
-        if (questionNumber <= QUESTION_COUNT) {
+        if (questionNumber < QUESTION_COUNT) {
             setQuestionNumber(questionNumber + 1);
-            setQuestion(questions[questionNumber]);
+            setQuestion(questions[questionNumber + 1]);
         }
     }
 
@@ -42,7 +42,7 @@ function Quiz() {
             result.push(removed);
             i++;
         }
-        
+
         return result;
     }
 
@@ -65,6 +65,7 @@ function Quiz() {
         const fetch = async () => {
             const data = await getQuestions();
             const subset = getRandomSubset(data.questions);
+            console.log(subset);
             setQuestions(subset);
             setQuestion(subset[0]);
         };

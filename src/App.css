@@ -2,12 +2,14 @@
   background-color: #3730A3;
   position: absolute;
   width: 100%;
+  min-height: 100%;
 }
 
 main {
   min-width: 864px;
+  height: 100%;
   width: 60%;
-  margin: 10% auto;
+  margin: 2% auto;
 }
 
 h1 {
